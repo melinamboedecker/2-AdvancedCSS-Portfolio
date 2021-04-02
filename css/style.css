@@ -3,7 +3,7 @@
     --mintCream: #F0F7EE;
     --darkMossGreen: #3F612D;
     --claret: #6D1A36;
-    --russianViolet: 240B36;
+    /* --russianViolet: 240B36; */
 }
 
 img {
@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--mintCream);
-    color: var(--russianViolet);
+    color: var(--claret);
 }
 
 header {
@@ -24,18 +24,22 @@ header {
     background-color: var(--queenBlue);
     padding: 1.5%; 
     color: var(--claret);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 
 header h1 {
-    display: inline-block;
-    font-size: 50px;
-    background-color: var(--mintCream);
+    /* display: inline-block; */
+    font-size: 200%;
+    /* background-color: var(--mintCream); */
 }
 
 header nav {
-    margin-right: 20px;
-    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
     font-size: 20px;
 }
 
@@ -48,37 +52,41 @@ nav ul li {
 #photo-header {
     height: 200px;
     width: 100%;
-    display: flex;
+    position: relative;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    align-content: space around;
+    align-content: space around; */
 }
 
-#photo-header img {
+/* #photo-header img {
     width: 100%;
-}
+} */
 
-#photo-header #background {
+#background {
     width: 100%;
     position: relative;
     z-index: -3;
 }
 
-#photo-header #self-photo {
-    width: 35%;
-    position: relative;
-    top: -25%;
-    padding: 5%;
+#self-photo {
+    width: 30%;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    padding: 0;
+    z-index: 2;
+}
+#subtitle {
+    position: absolute;
+    top: 20%;
+    right: 5%;
     z-index: 2;
 }
 
-#self-photo {
-    width: 50%;
-}
 
-
-#photo-header h2 {
+#subtitle h2 {
     font-size: 120%;
 }
 
@@ -223,4 +231,34 @@ h2 {
     margin: 0.75%;
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        background-color: var(--darkMossGreen);
+    }
+}
 
+@media screen and (max-width: 768px) {
+    header {
+        background-color: yellow;
+    }
+    #row2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space around;
+    }
+    #row3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space around;
+    }
+    .regbox {
+        width: 50%;
+    }
+    .regbox a {
+        justify-items: center;
+    }
+}
