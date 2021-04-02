@@ -86,20 +86,18 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: stretch;
 
 }
 
-/* .regbox img {
-    width: 25%;
-} */
-
-/* #bigbox img {
-    width: 50%;
-} */
+.left {
+    height: 100%;
+}
 
 h2 {
     font-size: 150%;
     color: var(--claret);
+    height: 100%;
 }
 
 #about-me {
@@ -114,17 +112,18 @@ h2 {
 }    
 
 #about-me .left {
-    width: 25%;
+    width: 22%;
     height: 100%;
-    border-right: 5px solid var(--claret);
-    align-self: center;
+    /* align-self: center; */
     padding: 1%;
     margin: 0;
 }
 
 #about-me .right {
-    width: 75%;
+    width: 78%;
     padding: 1%;
+    margin: 0.75%;
+    border-left: 5px solid var(--claret);
 }
 
 #work {
@@ -136,16 +135,18 @@ h2 {
 }    
 
 #work .left {
-    width: 25%;
+    width: 22%;
     height: 100%;
-    border-right: 5px solid var(--claret);
-    align-self: center;
+    /* align-self: center; */
     padding: 1%;
+    margin: 0;
 }
 
 #work .right {
     padding: 1%;
-    width: 75%;
+    margin: 0.75%;
+    width: 78%;
+    border-left: 5px solid var(--claret);
 }
 
 #pics {
@@ -172,6 +173,11 @@ h2 {
     align-content: space around;
 }
 
+#bigbox, .regbox {
+    border: 5px solid var(--queenBlue);
+    margin: 1%;
+}
+
 #contact-me {
     display: flex;
     flex-direction: row;
@@ -181,15 +187,17 @@ h2 {
 }    
 
 #contact-me .left {
-    width: 25%;
+    width: 22%;
     height: 100%;
-    border-right: 5px solid var(--claret);
     align-self: center;
     padding: 1%;
+    margin: 0;
 }
 
 #contact-me .right {
     padding: 1%;
+    margin: 0.75%;
+    border-left: 5px solid var(--claret);
 }
 
 #resume {
@@ -201,15 +209,18 @@ h2 {
 }    
 
 #resume .left {
-    width: 25%;
+    width: 22%;
     height: 100%;
-    border-right: 5px solid var(--claret);
     align-self: center;
     padding: 1%;
+    margin: 0;
 }
 
 #resume .right {
     padding: 1%;
+    width: 78%;
+    border-left: 5px solid var(--claret);
+    margin: 0.75%;
 }
 
 
