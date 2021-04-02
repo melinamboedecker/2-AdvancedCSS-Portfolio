@@ -1,0 +1,215 @@
+:root {
+    --queenBlue: #577590;
+    --mintCream: #F0F7EE;
+    --darkMossGreen: #3F612D;
+    --claret: #6D1A36;
+    --russianViolet: 240B36;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mintCream);
+    color: var(--russianViolet);
+}
+
+header {
+    width: 100%;
+    background-color: var(--queenBlue);
+    padding: 1.5%; 
+    color: var(--claret);
+    
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 50px;
+    background-color: var(--mintCream);
+}
+
+header nav {
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+#photo-header {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space around;
+}
+
+#photo-header img {
+    width: 100%;
+}
+
+#photo-header #background {
+    width: 100%;
+    position: relative;
+    z-index: -3;
+}
+
+#photo-header #self-photo {
+    width: 35%;
+    position: relative;
+    top: -25%;
+    padding: 5%;
+    z-index: 2;
+}
+
+#self-photo {
+    width: 50%;
+}
+
+
+#photo-header h2 {
+    font-size: 120%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+/* .regbox img {
+    width: 25%;
+} */
+
+/* #bigbox img {
+    width: 50%;
+} */
+
+h2 {
+    font-size: 150%;
+    color: var(--claret);
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: space around;
+    /* flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; */
+}    
+
+#about-me .left {
+    width: 25%;
+    height: 100%;
+    border-right: 5px solid var(--claret);
+    align-self: center;
+    padding: 1%;
+    margin: 0;
+}
+
+#about-me .right {
+    width: 75%;
+    padding: 1%;
+}
+
+#work {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: space around;
+}    
+
+#work .left {
+    width: 25%;
+    height: 100%;
+    border-right: 5px solid var(--claret);
+    align-self: center;
+    padding: 1%;
+}
+
+#work .right {
+    padding: 1%;
+    width: 75%;
+}
+
+#pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space around;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space around;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space around;
+}
+
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: space around;
+}    
+
+#contact-me .left {
+    width: 25%;
+    height: 100%;
+    border-right: 5px solid var(--claret);
+    align-self: center;
+    padding: 1%;
+}
+
+#contact-me .right {
+    padding: 1%;
+}
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: space around;
+}    
+
+#resume .left {
+    width: 25%;
+    height: 100%;
+    border-right: 5px solid var(--claret);
+    align-self: center;
+    padding: 1%;
+}
+
+#resume .right {
+    padding: 1%;
+}
+
+
