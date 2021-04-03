@@ -207,6 +207,7 @@ h2 {
 #contact-me .right {
     padding: 1%;
     margin: 0.75%;
+    width: 78%;
     border-left: 5px solid var(--claret);
 }
 
@@ -232,6 +233,16 @@ h2 {
     border-left: 5px solid var(--claret);
     margin: 0.75%;
 }
+
+#work img { 
+    opacity: 0.9; 
+    transition: all 0.2s ease-in-out;
+  } 
+  
+#work img:hover { 
+    opacity: 1; 
+    box-shadow: inset 0px 0px 5px var(--claret), 0 0 10px var(--claret);
+  }
 
 @media screen and (max-width: 992px) {
     header {
