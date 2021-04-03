@@ -8,6 +8,11 @@
 
 img {
     width: 100%;
+    height: 100%;
+}
+
+* {
+    color: var(--claret);
 }
 
 body {
@@ -50,7 +55,6 @@ nav ul li {
 }
 
 #photo-header {
-    height: 200px;
     width: 100%;
     position: relative;
     /* display: flex;
@@ -60,27 +64,17 @@ nav ul li {
     align-content: space around; */
 }
 
-/* #photo-header img {
-    width: 100%;
-} */
-
-#background {
-    width: 100%;
-    position: relative;
-    z-index: -3;
-}
-
 #self-photo {
-    width: 30%;
+    width: 8%;
     position: absolute;
-    top: 3%;
+    top: 12%;
     left: 2%;
     padding: 0;
     z-index: 2;
 }
 #subtitle {
     position: absolute;
-    top: 20%;
+    top: 50%;
     right: 5%;
     z-index: 2;
 }
@@ -157,12 +151,10 @@ h2 {
     border-left: 5px solid var(--claret);
 }
 
-#pics {
+#picbox {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #row2 {
@@ -170,7 +162,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    align-content: space around;
+    align-content: space-around;
 }
 
 #row3 {
@@ -178,12 +170,22 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    align-content: space around;
+    align-content: space-around;
 }
 
 #bigbox, .regbox {
     border: 5px solid var(--queenBlue);
     margin: 1%;
+    position: relative;
+}
+
+.projectname {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    z-index: 3;
+    padding: 1.5%;
+    background-color: var(--queenBlue);
 }
 
 #contact-me {
@@ -191,7 +193,7 @@ h2 {
     flex-direction: row;
     justify-content: start;
     align-items: stretch;
-    align-content: space around;
+    align-content: space-around;
 }    
 
 #contact-me .left {
