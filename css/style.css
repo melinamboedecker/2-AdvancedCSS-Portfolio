@@ -81,7 +81,7 @@ header a {
 /* use position absolute to see and position subtitle over background image */
 #subtitle {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 5%;
 }
 
@@ -220,6 +220,15 @@ a img {
 /* for viewing with mobile phones */
 @media screen and (max-width: 768px) {    
    
+    #subtitle {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
    /* Place pictures in a single column */
     #row2 {
         display: flex;
@@ -259,6 +268,7 @@ a img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 15%;
     }
 
     .right {
