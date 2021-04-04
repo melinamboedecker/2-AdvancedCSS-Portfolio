@@ -1,18 +1,14 @@
 :root {
-    --queenBlue: #577590;
-    --mintCream: #F0F7EE;
-    --darkMossGreen: #3F612D;
-    --claret: #6D1A36;
-    /* --russianViolet: 240B36; */
+    --dark: #172121;
+    --indep: #444554;
+    --grey: #7F7B82;
+    --shadow: #BFACB5;
+    --champ: #e5d0cc;
 }
 
 img {
     width: 100%;
     height: 100%;
-}
-
-* {
-    color: var(--claret);
 }
 
 body {
@@ -21,14 +17,13 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--mintCream);
-    color: var(--claret);
+    color: var(--dark);
 }
 
 header {
     width: 100%;
-    background-color: var(--queenBlue);
+    background-color: var(--indep);
     padding: 1.5%; 
-    color: var(--claret);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,9 +32,11 @@ header {
 }
 
 header h1 {
-    /* display: inline-block; */
-    font-size: 200%;
-    /* background-color: var(--mintCream); */
+    font-size: 175%;
+    color: var(--champ);
+    padding: 1%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px 5px var(--grey);
 }
 
 header nav {
@@ -51,27 +48,34 @@ header nav {
 nav ul li {
     display: inline-block;
     margin-left: 25px;
-    font-weight: bold;
+    padding-bottom: 2%;
+    border-bottom: 2px solid var(--champ);
+}
+
+header a {
+    color: var(--champ);
+    text-decoration: none;
 }
 
 #photo-header {
     width: 100%;
     position: relative;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space around; */
 }
 
 #self-photo {
-    width: 8%;
+    width: 9.5%;
     position: absolute;
     top: 12%;
     left: 2%;
     padding: 0;
     z-index: 2;
 }
+
+#self-photo img {
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px 5px var(--indep);
+}
+
 #subtitle {
     position: absolute;
     top: 50%;
@@ -89,7 +93,7 @@ nav ul li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
-
+    color: var(--dark);
 }
 
 .left {
@@ -98,7 +102,7 @@ nav ul li {
 
 h2 {
     font-size: 150%;
-    color: var(--claret);
+    color: var(--dark);
     height: 100%;
 }
 
@@ -108,15 +112,11 @@ h2 {
     justify-content: start;
     align-items: stretch;
     align-content: space around;
-    /* flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; */
 }    
 
 #about-me .left {
     width: 22%;
     height: 100%;
-    /* align-self: center; */
     padding: 1%;
     margin: 0;
 }
@@ -125,7 +125,7 @@ h2 {
     width: 78%;
     padding: 1.5%;
     margin: 0.75%;
-    border-left: 5px solid var(--claret);
+    border-left: 5px solid var(--dark);
 }
 
 #work {
@@ -139,7 +139,6 @@ h2 {
 #work .left {
     width: 22%;
     height: 100%;
-    /* align-self: center; */
     padding: 1%;
     margin: 0;
 }
@@ -148,7 +147,11 @@ h2 {
     padding: 1%;
     margin: 0.75%;
     width: 78%;
-    border-left: 5px solid var(--claret);
+    border-left: 5px solid var(--dark);
+}
+
+#work a {
+    background-color: var(--indep);
 }
 
 #picbox {
@@ -174,18 +177,19 @@ h2 {
 }
 
 #bigbox, .regbox {
-    border: 5px solid var(--queenBlue);
+    border: 5px solid var(--indep);
     margin: 1%;
     position: relative;
 }
 
 .projectname {
+    color: var(--champ);
     position: absolute;
     top: 65%;
     left: 0;
     z-index: 3;
     padding: 1.5%;
-    background-color: var(--queenBlue);
+    background-color: var(--indep);
 }
 
 #contact-me {
@@ -208,11 +212,12 @@ h2 {
     padding: 1%;
     margin: 0.75%;
     width: 78%;
-    border-left: 5px solid var(--claret);
+    border-left: 5px solid var(--dark);
 }
 
 #contact-me a {
     padding: 1%;
+    color: var(--dark);
 }
 
 #resume {
@@ -234,12 +239,13 @@ h2 {
 #resume .right {
     padding: 1%;
     width: 78%;
-    border-left: 5px solid var(--claret);
+    border-left: 5px solid var(--dark);
     margin: 0.75%;
 }
 
 #resume a {
     padding: 1%;
+    color: var(--dark);
 }
 
 
@@ -250,19 +256,16 @@ h2 {
   
 #work img:hover { 
     opacity: 1; 
-    box-shadow: inset 0px 0px 5px var(--claret), 0 0 10px var(--claret);
+    box-shadow: inset 0px 0px 5px var(--shadow), 0 0 10px var(--shadow);
   }
 
 @media screen and (max-width: 992px) {
-    header {
+    /* header {
         background-color: var(--darkMossGreen);
-    }
+    } */
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        background-color: yellow;
-    }
+@media screen and (max-width: 768px) {    
     #row2 {
         display: flex;
         flex-direction: column;
@@ -289,28 +292,28 @@ h2 {
     }
     
     #about-me .left {
-        border-bottom: 5px solid var(--claret);
+        border-bottom: 5px solid var(--dark);
     }
     #about-me .right {
         border: none;
     }
     
     #work .left {
-        border-bottom: 5px solid var(--claret);
+        border-bottom: 5px solid var(--dark);
     }
     #work .right {
         border: none;
     }
 
     #contact-me .left {
-        border-bottom: 5px solid var(--claret);
+        border-bottom: 5px solid var(--dark);
     }
     #contact-me .right {
         border: none;
     }
 
     #resume .left {
-        border-bottom: 5px solid var(--claret);
+        border-bottom: 5px solid var(--dark);
     }
     #resume .right {
         border: none;
