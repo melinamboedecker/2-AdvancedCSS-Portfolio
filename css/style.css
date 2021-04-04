@@ -167,7 +167,7 @@ a img {
     color: var(--champ);
     font-size: 85%;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 0;
     padding: 1.5%;
     background-color: var(--indep);
@@ -179,7 +179,7 @@ a img {
 
 .projectname p {
     font-size: 65%;
-    padding-top: 13%;
+    padding-top: 5%;
 }
 
 #contact-me {
